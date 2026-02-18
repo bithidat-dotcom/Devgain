@@ -1,0 +1,5 @@
+{
+  "name": "DevGenie - AI Website Builder",
+  "description": "An AI-powered web development assistant that generates, previews, and iterates on website code instantly using Gemini.",
+  "requestFramePermissions": []
+}
