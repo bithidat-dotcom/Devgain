@@ -6,14 +6,16 @@
     <title>DevGenie - AI Website Builder</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <!-- Entry point for the React application -->
+    <script type="module" src="/index.tsx"></script>
   <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^18.2.0/",
+    "react": "https://esm.sh/react@^18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@^18.2.0/",
     "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.574.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.263.1",
     "jszip": "https://esm.sh/jszip@^3.10.1",
     "prismjs": "https://esm.sh/prismjs@^1.29.0"
   }
@@ -21,6 +23,11 @@
 </script>
 </head>
   <body class="bg-gray-900 text-white overflow-hidden">
-    <div id="root"></div>
+    <div id="root" class="h-screen w-full flex items-center justify-center">
+      <div class="flex flex-col items-center gap-4 animate-pulse">
+        <div class="w-12 h-12 bg-blue-600 rounded-xl shadow-lg shadow-blue-900/50"></div>
+        <div class="text-gray-400 font-medium tracking-wide">Initializing DevGenie...</div>
+      </div>
+    </div>
   </body>
 </html>
